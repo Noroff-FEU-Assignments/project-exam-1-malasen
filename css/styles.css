@@ -1,10 +1,30 @@
-.logo {
-  width: 100px;
+@import "/css/includes/typography.css";
+@import "/css/includes/images.css";
+
+body {
+  margin: 0px;
+  margin-top: -20px;
+  background-color: #e0ecde;
 }
-.banner {
-  background-image: url("../images/dicebag.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: left bottom;
-  width: 100%;
+main {
+  margin: 8px;
+}
+
+nav {
+  background-color: #f8fff5;
+  margin-top: -25px;
+  padding-top: 0px;
+  box-shadow: rgba(128, 128, 128, 0.472) 0.5px 0.5px 7px;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  padding: 8px;
+  justify-content: left;
+}
+
+nav li {
+  margin-right: 8px;
 }

@@ -1,0 +1,32 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h2 {
+  font-family: "Laila", sans-serif;
+  font-size: 13pt;
+}
+
+h3 {
+  font-family: "Laila", sans-serif;
+  font-size: 11pt;
+}
+
+p {
+  font-size: 10pt;
+}
+
+nav li {
+  text-transform: uppercase;
+  font-size: 13pt;
+  color: #707070;
+}
+
+nav .current {
+  color: #010100;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
