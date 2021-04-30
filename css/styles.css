@@ -1,0 +1,10 @@
+.logo {
+  width: 100px;
+}
+.banner {
+  background-image: url("../images/dicebag.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left bottom;
+  width: 100%;
+}
