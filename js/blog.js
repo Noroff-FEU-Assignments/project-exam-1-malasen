@@ -13,15 +13,12 @@ async function getPost(){
             loader.classList.remove("loader");
             postsContainer.innerHTML += `<h3>${results[i].title.rendered}</h3>
                                          <div>${results[i].excerpt.rendered}</div>
+                                         <a href="blogpost.html?id=${results[i].id}"> Continue to read... </a>
                                          <time>Posted: ${results[i].date} </time>`
         }
-
-        
     } catch {
         console.log (error);
     }
-    
-    
 }
 
 getPost();
