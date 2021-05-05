@@ -3,7 +3,7 @@ const params = new URLSearchParams(querystring);
 const id = params.get("id");
 //console.log(id);
 
-const postsUrl = "https://muel.no/productapi/wp-json/wp/v2/posts/" +id;
+const postsUrl = "https://muel.no/productapi/wp-json/wp/v2/posts/" +id + "?_embed";
 const postsContainer = document.querySelector(".container");
 const loader = document.querySelector(".loader");
 
