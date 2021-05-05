@@ -11,10 +11,10 @@ async function getPost(){
         for(let i= 0; i < results.length; i++){
             console.log(results[i].title);
             loader.classList.remove("loader");
-            postsContainer.innerHTML += `<div class="card">
+            postsContainer.innerHTML += `<div class="card" style="background-image:url('${results[i]._links["wp:featuredmedia"][0].href}?_embed')">
                                          <h3>${results[i].title.rendered}</h3>
                                          <div>${results[i].excerpt.rendered}</div>
-                                         <a href="blogpost.html?id=${results[i].id}"> Continue to read... </a>
+                                         <a href="blogpost.html?id=${results[i].id}"> Continue to read... </a>s
                                          <time>Posted: ${results[i].date} </time> 
                                          </div>`
         }
