@@ -4,7 +4,7 @@ const id = params.get("id");
 //console.log(id);
 
 const postsUrl = "https://muel.no/productapi/wp-json/wp/v2/posts/" +id;
-const postsContainer = document.querySelector(".blogcontainer");
+const postsContainer = document.querySelector(".container");
 const loader = document.querySelector(".loader");
 
 async function getPost(){
