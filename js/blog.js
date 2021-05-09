@@ -18,9 +18,10 @@ async function getPost(){
                                          <div class="featuredDate"><time>Posted: ${results[i].date} </time></div>
                                          <div class="featuredTags"></div>
                                          <div class="featuredTitle"><h3>${results[i].title.rendered}</h3></div>
-                                         <div class="featuredContent">${results[i].excerpt.rendered}</div></br>
-                                         <div class="featuredImg" style="background-image:url('${results[i]._embedded["wp:featuredmedia"][0].source_url}')">
+                                         <div class="featuredContent">${results[i].excerpt.rendered}</div>
                                          <button class="call-to">Continue Reading</button>
+                                         <div class="featuredImg" style="background-image:url('${results[i]._embedded["wp:featuredmedia"][0].source_url}')">
+                                         
                                          </div>
                                          </a></div>
                                          `

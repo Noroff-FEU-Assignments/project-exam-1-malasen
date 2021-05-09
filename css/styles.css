@@ -3,8 +3,8 @@
 @import "/css/includes/layout-blog.css";
 
 body {
-  margin: 0px;
-  margin-top: -20px;
+  margin: 0% 0%;
+  margin-top: -22px;
   background-color: #e0ecde;
 }
 main {
@@ -35,7 +35,7 @@ nav li {
   background-blend-mode: overlay;
   border: rgba(158, 175, 175, 0.781) 1px solid;
   padding: 10px;
-  box-shadow: rgba(128, 128, 128, 0.733) 0px 0px 7px;
+  box-shadow: rgba(128, 128, 128, 0.733) 0px 0px 0.1px;
   margin-top: 10px;
 }
 .card:nth-child(13n + 1),
@@ -46,11 +46,19 @@ nav li {
 
 .call-to {
   border-radius: 5px;
-  width: 200px;
+  width: 170px;
 }
 
-@media (min-width: 1800px) {
+@media (min-width: 1120px) {
   body {
-    margin: 0px 500px;
+    margin: 0% 20%;
+    margin-top: -22px;
+  }
+}
+
+@media (min-width: 1880px) {
+  body {
+    margin: 0% 25%;
+    margin-top: -22px;
   }
 }
