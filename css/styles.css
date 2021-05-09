@@ -29,3 +29,10 @@ nav ul {
 nav li {
   margin-right: 8px;
 }
+
+.card {
+  background-size: cover;
+  background-blend-mode: overlay;
+  border: darkslategray 1px solid;
+  padding: 0px 10px 10px;
+}
