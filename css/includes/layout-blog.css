@@ -1,16 +1,14 @@
 @media (min-width: 796px) {
   .card:nth-child(13n + 1) {
     grid-area: left;
-    border: none;
   }
 
   .card:nth-child(9n) {
     grid-area: right;
-    border: none;
   }
   .blogcontainer {
     display: grid;
-    grid-gap: 10px;
+    grid-gap: 15px;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto auto auto auto auto;
     grid-template-areas:

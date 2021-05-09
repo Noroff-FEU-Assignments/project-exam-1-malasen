@@ -33,6 +33,24 @@ nav li {
 .card {
   background-size: cover;
   background-blend-mode: overlay;
-  border: darkslategray 1px solid;
-  padding: 0px 10px 10px;
+  border: rgba(158, 175, 175, 0.781) 1px solid;
+  padding: 10px;
+  box-shadow: rgba(128, 128, 128, 0.733) 0px 0px 7px;
+  margin-top: 10px;
+}
+.card:nth-child(13n + 1),
+.card:nth-child(9n) {
+  border: none;
+  box-shadow: none;
+}
+
+.call-to {
+  border-radius: 5px;
+  width: 200px;
+}
+
+@media (min-width: 1800px) {
+  body {
+    margin: 0px 500px;
+  }
 }
