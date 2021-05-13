@@ -11,7 +11,7 @@ async function getPost(){
     try {
         const response = await fetch(postsUrl);
         const results = await response.json();
-        console.log(results);
+        loader.style.display="none";
         postsContainer.innerHTML +="<h2>"+ results.title.rendered + "</h2>"+ results.content.rendered;
         
     } catch {

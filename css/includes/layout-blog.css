@@ -1,11 +1,26 @@
-@media (min-width: 796px) {
-  .card:nth-child(13n + 1) {
-    grid-area: left;
-  }
+.card:nth-child(13n + 1) {
+  grid-area: left;
+}
 
-  .card:nth-child(9n) {
-    grid-area: right;
-  }
+.card:nth-child(9n) {
+  grid-area: right;
+}
+
+.blogcontainer {
+  display: grid;
+  grid-gap: 15px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto auto auto auto;
+  grid-template-areas:
+    "left  left"
+    ". ."
+    ". . "
+    "right right"
+    ". ."
+    ". .";
+}
+
+@media (min-width: 796px) {
   .blogcontainer {
     display: grid;
     grid-gap: 15px;

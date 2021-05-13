@@ -41,7 +41,7 @@ h1 {
   padding: 10px;
   box-shadow: rgba(128, 128, 128, 0.733) 0px 0px 0.1px;
   margin-top: 10px;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.335);
 }
 
 .card:nth-child(13n + 1),
@@ -59,6 +59,7 @@ h1 {
 .container {
   width: 70%;
   margin: 10px auto;
+  background-color: white;
 }
 
 .carousel {
@@ -66,6 +67,7 @@ h1 {
   overflow: hidden;
   margin-left: -8px;
   margin-right: -8px;
+  z-index: 1;
 }
 
 .slider {
@@ -73,21 +75,30 @@ h1 {
   display: flex;
   width: 400%;
   transition: all 0.3s;
+  background-color: white;
 }
+
 .slider a {
   width: 100%;
   height: 100%;
   position: relative;
   text-align: center;
+  cursor: inherit;
 }
+
 .slider h3 {
   width: 100%;
-  background-color: rgba(95, 184, 79, 0.897);
+  background-color: rgba(255, 255, 255, 0.897);
   position: absolute;
   bottom: 0;
   margin: 0;
   padding-bottom: 60px;
   padding-top: 20px;
+  cursor: pointer;
+}
+
+.slider h3:hover {
+  background-color: rgba(95, 184, 79, 0.897);
 }
 
 .slider .carousel-content {
@@ -169,6 +180,10 @@ footer {
   body {
     margin: 0% 20%;
     margin-top: -22px;
+  }
+
+  .carousel {
+    height: 500px;
   }
 }
 

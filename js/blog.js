@@ -15,7 +15,7 @@ async function getPost(){
             postsContainer.innerHTML += `<div class="card" >
                                          <a href="blogpost.html?id=${results[i].id}">
                                          <div class="featuredAuthor">Author: ${results[i]._embedded.author[0].name}</div>
-                                         <div class="featuredDate"><time>Posted: ${results[i].date} </time></div>
+                                         <div class="featuredDate"><time>Posted: ${results[i].date.split("T")} </time></div>
                                          <div class="featuredTags"></div>
                                          <div class="featuredTitle"><h3>${results[i].title.rendered}</h3></div>
                                          <div class="featuredContent">${results[i].excerpt.rendered}</div>

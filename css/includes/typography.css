@@ -11,7 +11,7 @@ h1 {
 
 h2 {
   font-family: "Laila", sans-serif;
-  font-size: 20pt;
+  font-size: 17pt;
 }
 
 h3 {
@@ -34,7 +34,7 @@ nav .current {
 }
 
 nav a {
-  font-size: 15pt;
+  font-size: 17pt;
   font-weight: bolder;
 }
 
@@ -69,5 +69,17 @@ footer {
 @media (max-width: 800px) {
   h1 {
     font-size: 11.5pt;
+  }
+  nav a {
+    font-size: 15pt;
+  }
+  h2 {
+    font-size: 15pt;
+  }
+  h3 {
+    font-size: 12pt;
+  }
+  p {
+    font-size: 11pt;
   }
 }
