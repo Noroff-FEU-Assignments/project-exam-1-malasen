@@ -32,6 +32,35 @@
   overflow: hidden;
 }
 
+.bottom {
+  background-image: url("../../images/dicebag.jpg");
+  background-position: top;
+  background-size: cover;
+  min-height: 300px;
+  width: 100%;
+  position: relative;
+  text-align: center;
+  z-index: -1;
+  margin-top: -20px;
+}
+
+.black-bg {
+  background-color: black;
+  min-height: 180px;
+  width: 100%;
+  z-index: -2;
+  margin-top: -20px;
+}
+
+figure {
+  text-align: center;
+}
+
+figure img {
+  width: 80%;
+  object-fit: cover;
+}
+
 @media (min-width: 800px) {
   .banner {
     min-height: 250px;

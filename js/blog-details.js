@@ -4,7 +4,7 @@ const id = params.get("id");
 //console.log(id);
 
 const postsUrl = "https://muel.no/productapi/wp-json/wp/v2/posts/" +id + "?_embed";
-const postsContainer = document.querySelector(".container");
+const postsContainer = document.querySelector(".postcontainer");
 const loader = document.querySelector(".loader");
 
 async function getPost(){
@@ -12,7 +12,7 @@ async function getPost(){
         const response = await fetch(postsUrl);
         const results = await response.json();
         console.log(results);
-        postsContainer.innerHTML +=results.title.rendered + results.content.rendered;
+        postsContainer.innerHTML +="<h2>"+ results.title.rendered + "</h2>"+ results.content.rendered;
         
     } catch {
         console.log (error);
