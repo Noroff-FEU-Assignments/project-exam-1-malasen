@@ -171,9 +171,39 @@ h1 {
   margin-bottom: -400px;
 }
 
+.contactform {
+  background-color: white;
+  padding: 20px;
+  align-items: center;
+  margin: 0px auto;
+  width: fit-content;
+  z-index: 2;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+}
+
+input::placeholder {
+  padding: 0px 5px;
+}
+
+input {
+  margin: 10px 0px;
+  height: 30px;
+}
+
+textarea {
+  min-height: 100px;
+  margin: 10px 0px;
+}
+
 footer {
   width: 100%;
   min-height: 50px;
+  z-index: -1;
 }
 
 @media (min-width: 1120px) {

@@ -56,9 +56,21 @@
   margin-top: -20px;
 }
 
-.black-bg {
+.black {
   background-color: black;
   min-height: 180px;
+  width: 100%;
+  z-index: -2;
+  margin-top: -20px;
+}
+.black-bg {
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(224, 236, 222, 1) 100%
+  );
+  min-height: 100px;
   width: 100%;
   z-index: -2;
   margin-top: -20px;
