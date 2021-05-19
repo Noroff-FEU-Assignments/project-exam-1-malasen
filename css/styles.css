@@ -7,14 +7,10 @@ body {
   margin-top: -22px;
   background-color: #e0ecde;
 }
-main {
-  margin: 8px;
-}
 
 nav {
   background-color: #f8fff5;
   margin-top: -25px;
-  padding-top: 0px;
   box-shadow: rgba(128, 128, 128, 0.472) 0.5px 0.5px 7px;
 }
 
@@ -30,11 +26,6 @@ nav li {
   margin-right: 8px;
 }
 
-h1 {
-  margin-top: -102px;
-  margin-left: 45px;
-}
-
 .card {
   background-size: cover;
   background-blend-mode: overlay;
@@ -42,6 +33,29 @@ h1 {
   box-shadow: rgba(128, 128, 128, 0.733) 0px 0px 0.1px;
   margin-top: 10px;
   background-color: rgba(255, 255, 255, 0.335);
+}
+
+.featured,
+.postcontainer,
+.welcome-message {
+  margin: 0% 5%;
+}
+
+.banner {
+  padding: 0% 5%;
+  width: 90%;
+}
+
+button {
+  color: black;
+  background-color: transparent;
+  border-style: white 4px ridge;
+  font-size: 15pt;
+  font-weight: bold;
+}
+
+button:hover {
+  cursor: pointer;
 }
 
 .card:nth-child(13n + 1),
@@ -57,9 +71,8 @@ h1 {
 }
 
 .container {
-  width: 70%;
+  width: 80%;
   margin: 10px auto;
-  background-color: white;
 }
 
 .carousel {
@@ -75,6 +88,9 @@ h1 {
   display: flex;
   width: 400%;
   transition: all 0.3s;
+  background-color: white;
+}
+.slider1 {
   background-color: white;
 }
 
@@ -171,6 +187,11 @@ h1 {
   margin-bottom: -400px;
 }
 
+.load-more {
+  display: flex;
+  justify-content: space-evenly;
+}
+
 .contactform {
   background-color: white;
   padding: 20px;
@@ -186,7 +207,8 @@ form {
   width: 300px;
 }
 
-input::placeholder {
+input::placeholder,
+textarea::placeholder {
   padding: 0px 5px;
 }
 
@@ -200,6 +222,16 @@ textarea {
   margin: 10px 0px;
 }
 
+.requireName,
+.requireEmail,
+.requireSubject,
+.requireMessage {
+  font-size: 10pt;
+  color: red;
+  margin-top: -10px;
+  display: none;
+}
+
 footer {
   width: 100%;
   min-height: 50px;
@@ -207,31 +239,27 @@ footer {
 }
 
 @media (min-width: 1120px) {
-  body {
-    margin: 0% 20%;
-    margin-top: -22px;
-  }
-
   .carousel {
     height: 500px;
   }
-}
 
-@media (min-width: 1880px) {
-  body {
+  .welcome-message {
+    background-color: #20261d;
+    color: white;
+    text-align: center;
+    padding: 0% 25%;
+    margin: 0%;
+  }
+
+  .banner {
+    padding: 0% 25%;
+    width: 50%;
+  }
+
+  .featured,
+  nav ul,
+  .postcontainer,
+  .blogcontainer {
     margin: 0% 25%;
-    margin-top: -22px;
-  }
-
-  h1 {
-    margin-top: -118px;
-    margin-left: 48px;
-  }
-}
-
-@media (max-width: 800px) {
-  h1 {
-    margin-top: -73.5px;
-    margin-left: 24.5px;
   }
 }

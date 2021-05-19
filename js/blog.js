@@ -1,5 +1,7 @@
-const postsUrl = "https://muel.no/productapi/wp-json/wp/v2/posts?_embed";
+const postsUrl = "https://muel.no/productapi/wp-json/wp/v2/posts?_embed&per_page=100";
 const postsContainer = document.querySelector(".blogcontainer");
+const loadMorePosts = document.querySelector(".load-more");
+
 
 const loader = document.querySelector(".loader");
 
@@ -7,10 +9,11 @@ async function getPost(){
     try {
         const response = await fetch(postsUrl);
         const results = await response.json();
-        console.log(results);
+        //console.log(results);
+        postsContainer.innerHTML ="";
+      
 
-        for(let i= 0; i < results.length; i++){
-            //console.log(results[i].title);
+        for(let i= 0; i < results.length; i++){  
             loader.classList.remove("loader");
             postsContainer.innerHTML += `<div class="card" >
                                          <a href="blogpost.html?id=${results[i].id}">
@@ -26,8 +29,7 @@ async function getPost(){
                                          </a></div>
                                          `
             }
-            
-    } catch {
+    } catch(error) {
         console.log (error);
     }
 }

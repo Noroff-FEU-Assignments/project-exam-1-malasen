@@ -8,11 +8,23 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Laila:wght@500&display=swap" rel="stylesheet">
     <link href="../css/styles.css" rel="stylesheet"/>
+    <!-- Hotjar Tracking Code for https://destinybydice.netlify.app/ -->
+<script>
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:2409644,hjsv:6};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+</script>
+
 </head>
 <body>
     <header>
         <div class="banner">
-        <img src="../images/LOGO.png" alt="Destiny by Dice" class="logo"><h1>DESTINYbyDICE</h1>
+            <h1><img src="../images/LOGO.png" alt="Destiny by Dice" class="logo"></h1>
         </div>
         <nav>
             <ul>
@@ -27,14 +39,21 @@
         </nav> 
     </header>
     <main>
-        <h2>Contact</h2>
+        <div class="welcome-message">
+            <h2>Contact</h2> 
+        </div>
         <div class="contactform">
-            <form id="message">
-                <input type="text" name="name" placeholder="name">
-                <input type="text" name="email" placeholder="email">
-                <input type="text" name="subject" placeholder="subject">
-                <textarea form="message" name="message" placeholder="message"></textarea>
-                <input type="submit" value="submit">
+            <form id="send-message">
+                <input type="text" id="name" placeholder="name">
+                <div class="requireName">Require a minimum of 6 characters*</div>
+                <input type="text" id="email" placeholder="email">
+                <div class="requireEmail">Must be a valid email adress*</div>
+                <input type="text" id="subject" placeholder="subject">
+                <div class="requireSubject">Require a minimum of 16 characters*</div>
+                <textarea form="send-message" id="message" placeholder="message"></textarea>
+                <div class="requireMessage">Require a minimum of 26 characters*</div>
+                <div class="counter"></div>
+                <input disabled="" type="submit" value="SEND">
             </form>
         </div>
     </main>
