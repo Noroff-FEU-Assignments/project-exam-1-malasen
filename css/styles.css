@@ -184,10 +184,6 @@ button:hover {
   background-color: white;
 }
 
-.postcontainer {
-  margin-bottom: -400px;
-}
-
 .load-more {
   display: flex;
   justify-content: space-evenly;
