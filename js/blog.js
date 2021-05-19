@@ -9,7 +9,7 @@ async function getPost(){
     try {
         const response = await fetch(postsUrl);
         const results = await response.json();
-        console.log(results);
+        //console.log(results);
         postsContainer.innerHTML ="";
       
 

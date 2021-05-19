@@ -141,6 +141,7 @@ button:hover {
   text-align: center;
   cursor: pointer;
   border: 4px solid #2f0f69;
+  background-color: white;
 }
 
 .carousel-button.right {
