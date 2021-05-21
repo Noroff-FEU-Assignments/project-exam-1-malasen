@@ -88,6 +88,9 @@ footer {
   .welcome-message .fab:hover {
     font-size: 25pt;
   }
+  .sm-bar {
+    color: white;
+  }
 }
 
 @media (max-width: 400px) {

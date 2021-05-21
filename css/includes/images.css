@@ -28,11 +28,14 @@
   display: none;
 }
 
-.card:nth-child(13n + 1) .featuredImg,
+.card:nth-child(1) .featuredImg,
+.card:nth-child(13) .featuredImg,
 .card:nth-child(9n) .featuredImg,
-.card:nth-child(13n + 1) .featuredAuthor,
+.card:nth-child(1) .featuredAuthor,
+.card:nth-child(13) .featuredAuthor,
 .card:nth-child(9n) .featuredAuthor,
-.card:nth-child(13n + 1) .featuredDate,
+.card:nth-child(1) .featuredDate,
+.card:nth-child(13) .featuredDate,
 .card:nth-child(9n) .featuredDate {
   display: block;
 }
