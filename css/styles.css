@@ -224,6 +224,10 @@ form {
   width: 300px;
 }
 
+form label {
+  display: none;
+}
+
 input::placeholder,
 textarea::placeholder {
   padding: 0px 5px;
