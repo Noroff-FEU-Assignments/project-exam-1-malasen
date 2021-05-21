@@ -361,6 +361,24 @@ footer {
   }
 }
 
+@media (min-width: 1950px) {
+  .welcome-message {
+    padding: 0% 30%;
+  }
+
+  .banner {
+    padding: 0% 30%;
+    width: 40%;
+  }
+
+  .featured,
+  nav ul,
+  .postcontainer,
+  .blogcontainer {
+    margin: 0% 30%;
+  }
+}
+
 @media (max-width: 800px) {
   .backbuttons {
     top: 255px;
