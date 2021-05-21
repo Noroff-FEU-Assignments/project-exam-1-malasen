@@ -48,16 +48,21 @@ async function getPost(){
         getContent(results, sliderThree, 2);
         getContent(results, sliderFour, 3);
 
-            
+           
     } catch(error){
         console.log (error);
     }
 }
 
 function getContent(results, sliderNumber, number){
-    sliderNumber.innerHTML=`<a href="html/blogpost.html?id=${results[number].id}"><h3>${results[number].title.rendered}</h3></a>`
+    sliderNumber.innerHTML=`<a href="html/blogpost.html?id=${results[number].id}">
+                            <div class="slidercontent">
+                            <h3>${results[number].title.rendered}</h3>
+                            ${results[number].excerpt.rendered}
+                            </div></a>`
     sliderNumber.style.backgroundImage=`url(${results[number]._embedded["wp:featuredmedia"][0].source_url})`;
     sliderNumber.style.backgroundSize="cover";
 }
 
 getPost();
+

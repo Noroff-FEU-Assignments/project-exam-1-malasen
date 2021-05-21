@@ -28,8 +28,6 @@
   display: none;
 }
 
-.card:nth-child(13n + 1) .call-to,
-.card:nth-child(9n) .call-to,
 .card:nth-child(13n + 1) .featuredImg,
 .card:nth-child(9n) .featuredImg,
 .card:nth-child(13n + 1) .featuredAuthor,

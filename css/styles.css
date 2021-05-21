@@ -41,6 +41,15 @@ nav li {
   margin: 0% 5%;
 }
 
+.welcome-message {
+  text-align: center;
+}
+
+.welcome-message i {
+  font-size: 20pt;
+  padding: 5px;
+}
+
 .banner {
   padding: 0% 5%;
   width: 90%;
@@ -68,6 +77,8 @@ button:hover {
 .call-to {
   border-radius: 5px;
   width: 170px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .container {
@@ -102,7 +113,7 @@ button:hover {
   cursor: inherit;
 }
 
-.slider h3 {
+.slidercontent {
   width: 100%;
   background-color: rgba(255, 255, 255, 0.897);
   position: absolute;
@@ -113,8 +124,16 @@ button:hover {
   cursor: pointer;
 }
 
-.slider h3:hover {
-  background-color: rgba(95, 184, 79, 0.897);
+.slidercontent:hover {
+  background-color: #5eb84f;
+}
+
+.slidercontent p {
+  display: none;
+}
+
+.slidercontent:hover p {
+  display: block;
 }
 
 .slider .carousel-content {
@@ -234,6 +253,19 @@ footer {
   min-height: 50px;
   z-index: -1;
 }
+.sm-bar {
+  position: sticky;
+  bottom: 0;
+  background-color: #20261d;
+  font-size: 20pt;
+}
+
+.sm-bar i {
+  padding: 0px 5px;
+}
+.sm-bar i:hover {
+  color: white;
+}
 
 @media (min-width: 1120px) {
   .carousel {
@@ -243,9 +275,35 @@ footer {
   .welcome-message {
     background-color: #20261d;
     color: white;
-    text-align: center;
-    padding: 0% 25%;
+    padding: 0% 20%;
     margin: 0%;
+  }
+  .sm-banner {
+    background-color: #5d645a28;
+    width: 100%;
+  }
+
+  .welcome-message i {
+    padding: 15px;
+    font-size: 37pt;
+  }
+
+  .banner {
+    padding: 0% 20%;
+    width: 60%;
+  }
+
+  .featured,
+  nav ul,
+  .postcontainer,
+  .blogcontainer {
+    margin: 0% 20%;
+  }
+}
+
+@media (min-width: 1600px) {
+  .welcome-message {
+    padding: 0% 25%;
   }
 
   .banner {
