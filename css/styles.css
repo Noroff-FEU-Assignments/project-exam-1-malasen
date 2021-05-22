@@ -310,7 +310,7 @@ footer {
   .welcome-message {
     background-color: #20261d;
     color: white;
-    padding: 0 20%;
+    padding: 0% 20% 1%;
     padding-bottom: 1%;
     margin: 0%;
   }
@@ -345,7 +345,7 @@ footer {
 
 @media (min-width: 1600px) {
   .welcome-message {
-    padding: 0% 25%;
+    padding: 0% 25% 1%;
   }
 
   .banner {
@@ -363,7 +363,7 @@ footer {
 
 @media (min-width: 1950px) {
   .welcome-message {
-    padding: 0% 30%;
+    padding: 0% 30% 1%;
   }
 
   .banner {
