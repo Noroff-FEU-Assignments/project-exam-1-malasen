@@ -15,7 +15,6 @@
   display: grid;
   grid-gap: 15px;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto auto auto auto auto;
   grid-template-areas:
     "left  left"
     ". ."
@@ -31,7 +30,6 @@
     display: grid;
     grid-gap: 15px;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: auto auto auto auto auto;
     grid-template-areas:
       "left left ."
       "left left ."
