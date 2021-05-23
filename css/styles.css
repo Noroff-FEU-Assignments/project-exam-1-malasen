@@ -26,6 +26,13 @@ nav li {
   margin-right: 8px;
 }
 
+.sticky {
+  position: fixed;
+  top: 20px;
+  width: 100%;
+  z-index: 2;
+}
+
 .card {
   background-size: cover;
   background-blend-mode: overlay;
@@ -359,7 +366,7 @@ footer {
   }
 
   .backbuttons {
-    right: 20%;
+    margin-right: 20%;
     top: 330px;
     flex-direction: column;
   }

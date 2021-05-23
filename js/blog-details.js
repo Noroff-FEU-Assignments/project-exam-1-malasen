@@ -10,7 +10,17 @@ const loader = document.querySelector(".loader");
 const modalImg = document.querySelector(".modal-image");
 const modal = document.querySelector(".modal");
 
+const backButtons = document.querySelector(".backbuttons");
 
+window.onscroll = function (){
+    stickyButtons();
+}
+
+function stickyButtons() {
+    if(window.pageYOffset > 180){
+        console.log(backButtons);
+    }
+}
 
 
 async function getPost(){
@@ -42,3 +52,5 @@ async function getPost(){
 }    
 
 getPost();
+
+
