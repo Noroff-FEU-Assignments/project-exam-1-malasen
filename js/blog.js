@@ -3,7 +3,7 @@ const postsUrlMore = "https://muel.no/productapi/wp-json/wp/v2/posts?_embed&per_
 
 const postsContainer = document.querySelector(".blogcontainer");
 const loadMorePosts = document.querySelector(".load-more");
-const postCard = document.querySelector(".card");
+
 
 
 const loader = document.querySelector(".loader");
@@ -27,8 +27,8 @@ async function getPost(postsUrl){
                                          <div class="featuredImg" style="background-image:url('${results[i]._embedded["wp:featuredmedia"][0].source_url}')">
                                          </div>
                                          </a></div>
-                                         `
-            }
+                                         ` 
+            }    
     } catch(error) {
         console.log (error);
     }

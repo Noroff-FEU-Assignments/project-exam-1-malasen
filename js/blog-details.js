@@ -2,13 +2,16 @@ const querystring = document.location.search;
 const params = new URLSearchParams(querystring);
 const id = params.get("id");
 const titleUpdate = document.querySelector("title");
-const modalImg = document.querySelector(".modal img")
-
-
 
 const postsUrl = "https://muel.no/productapi/wp-json/wp/v2/posts/" +id + "?_embed";
 const postsContainer = document.querySelector(".postcontainer");
 const loader = document.querySelector(".loader");
+
+const modalImg = document.querySelector(".modal-image");
+const modal = document.querySelector(".modal");
+
+
+
 
 async function getPost(){
     try {
@@ -20,8 +23,19 @@ async function getPost(){
         titleUpdate.innerHTML = "Blog | " + results.title.rendered;
 
         const img = document.querySelector(".postcontainer img");
-        modalImg.innerHTML = img;
+        const span = document.querySelector(".close");
 
+        img.onclick = function() {
+            modal.style.display = "block";
+            modalImg.src = img.src;
+            console.log(span);
+        }
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+        modal.onclick = function() {
+            modal.style.display = "none";
+        }
     } catch {
         console.log (error);
     }

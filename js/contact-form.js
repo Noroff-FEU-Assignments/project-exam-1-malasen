@@ -39,10 +39,8 @@ subject.onkeyup = function (){
 message.onkeyup = function (){
     if (checkLength(message.value, 25) === true) {
         requiredMessage.style.display = "none";
-        submitButton.disabled = false;
     } else {
         requiredMessage.style.display = "block";
-        submitButton.disabled = true;
     }
 }
 
@@ -52,6 +50,12 @@ function validateForm() {
             && validateEmail(email.value) === true 
             && checkLength(message.value, 25) === true) {
             contactForm.innerHTML = "Thank you for your message!"
+        }
+        else {
+            requiredEmail.style.display = "block";
+            requiredName.style.display = "block";
+            requiredMessage.style.display = "block";
+            
         }
         
     }
