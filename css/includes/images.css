@@ -181,6 +181,9 @@ figure img {
     margin-top: 50px;
     width: 170px;
   }
+  .modal-image {
+    width: 100%;
+  }
 }
 
 @media (min-width: 1120px) {
