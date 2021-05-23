@@ -68,10 +68,6 @@ footer {
   color: blue;
 }
 
-.welcome-message .fab:hover {
-  font-size: 40pt;
-}
-
 @media (max-width: 800px) {
   nav a {
     font-size: 15pt;
