@@ -34,11 +34,13 @@ async function getPost(){
 
         const img = document.querySelector(".postcontainer img");
         const span = document.querySelector(".close");
+        
+        
 
         img.onclick = function() {
+            processedSrc = "https" + img.src.slice(4)
             modal.style.display = "block";
-            modalImg.src = img.src;
-            console.log(span);
+            modalImg.src = processedSrc;  
         }
         span.onclick = function() {
             modal.style.display = "none";
